@@ -134,7 +134,8 @@
     form.addEventListener('submit', (event) => {
       event.preventDefault();
       const input = document.getElementById('test').value;
-      const cleanedInput = removeWhiteSpaceAndNewLines(input)
+      const cleanedInput = removeWhiteSpaceAndNewLines(input);
+      document.getElementById('test').value = cleanedInput;
       form.submit()
     });
   </script>
